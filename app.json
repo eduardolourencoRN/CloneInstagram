@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "EduBank",
+    "slug": "EduBank",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
