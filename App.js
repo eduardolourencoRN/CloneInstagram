@@ -5,7 +5,9 @@ import HomeScreen from './src/screens/Home';
 import Graph from './src/screens/Graph';
 import PersonDetails from './src/screens/PersonDetails';
 import CustomTabBar from './src/Components/CustomTab/CustomBottomTab';
-import { Platform, StatusBar } from 'react-native';
+import { StatusBar } from 'react-native';
+import PublishPost from './src/screens/PublishPost';
+import VideoReels from './src/screens/VideoReels';
 
 const Tab = createBottomTabNavigator();
 const App = () => {
@@ -20,6 +22,8 @@ const App = () => {
             >
                 <Tab.Screen name='Home' component={HomeScreen} />
                 <Tab.Screen name='Graph' component={Graph} />
+                <Tab.Screen name='PublishPost' component={PublishPost} />
+                <Tab.Screen name='VideoReels' component={VideoReels} />
                 <Tab.Screen name='PersonDetails' component={PersonDetails} />
             </Tab.Navigator>
         </NavigationContainer>

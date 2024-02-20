@@ -76,15 +76,12 @@ const PostItem = ({ userId, username, imageUri }) => {
             <View style={{ flexDirection: 'row' }}>
                 <Text style={styles.likedByText}>Curtido por</Text>
                 <Text>
-                    {userStories &&
-                        userStories.likes.map((like, index) => (
-                            <Text key={index}>
-                                {like}
-                                {index !== userStories.likes.length - 1
-                                    ? ', '
-                                    : ''}
-                            </Text>
-                        ))}
+                    {userStories.likes.map((like, index) => (
+                        <Text key={index}>
+                            {like}
+                            {index !== userStories.likes.length - 1 ? ', ' : ''}
+                        </Text>
+                    ))}
                 </Text>
             </View>
         </View>

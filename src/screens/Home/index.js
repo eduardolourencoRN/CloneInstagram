@@ -11,8 +11,7 @@ const HomeScreen = () => {
 
     const onRefresh = () => {
         setRefreshing(true);
-        // Coloque aqui a lógica para atualizar os stories e posts
-        setTimeout(() => setRefreshing(false), 2000); // Exemplo: simular um delay de 2 segundos
+        setTimeout(() => setRefreshing(false), 2000);
     };
 
     return (

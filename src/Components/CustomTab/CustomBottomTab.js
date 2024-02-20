@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, View } from 'react-native';
+import { Image, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Octicons';
 import { styles } from './style';
 
@@ -24,7 +24,13 @@ const CustomTabBar = ({ state, descriptors, navigation }) => {
                 if (route.name === 'Home') {
                     iconName = 'home';
                 } else if (route.name === 'Graph') {
-                    iconName = 'graph';
+                    iconName = 'search';
+                } else if (route.name === 'Graph') {
+                    iconName = 'search';
+                } else if (route.name === 'PublishPost') {
+                    iconName = 'diff-added';
+                } else if (route.name === 'VideoReels') {
+                    iconName = 'video';
                 } else if (route.name === 'PersonDetails') {
                     iconName = 'person';
                 }
